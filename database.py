@@ -1,8 +1,10 @@
 import motor.motor_asyncio
 from model import UserModel, ModelCost
 
-client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017/')
+client = motor.motor_asyncio.AsyncIOMotorClient('mongodb+srv://kaushikvishwakarma2003:SveQfNGmgqtrG6du@cluster0.5gbpupv.mongodb.net/?retryWrites=true&w=majority')
+# client = motor.motor_asyncio.AsyncIOMotorClient('mongodb://localhost:27017/')
 database = client.knowwizeDashboard
+# database = client.knowwizeDashboard
 
 # Collections in Database
 userCollection = database.users
